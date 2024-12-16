@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Home - Prova da 2º unidade web1 - 2024.2</title>
+
+        <link rel="stylesheet" href="../assests/css/cadastro.css">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+</html>
+
+<body>
+
+    <header>
+                
+        <nav>.</nav>
+        
+    </header>
+
+    <main>
+
+        <section id="cadastro">
+
+            <div class="container-cadastro">
+
+                <div class="titulo-principal">
+
+                    <h1>Cadastro de Contatos</h1>
+
+                </div>
+
+                <form class="formulario-de-cadastro">
+
+                    <h2>Nome:</h2>
+                    <input class="formulario-nome" placeholder="Nome" name="nome">
+                    
+                    <h2>CPF:</h2>
+                    <input class="formulario-cpf"  placeholder="CPF" name="cpf">
+
+                    <h2>Data de Nascimento:</h2>
+                    <input class="formulario-nascimento" placeholder="Nascimento" name="nascimento">
+
+                    <h2>Endereço:</h2>
+                    <input class="formulario-endereco" placeholder="Endereco" name="endereco">
+
+                    <div class="area-dos-botoes">
+
+                        <div class="area-do-botao">
+
+                            <button class="botao-cadastrar" type="submit">Cadastrar</button>
+        
+                        </div>
+                        
+                        <div class="area-do-botao">
+    
+                            <button class="botao-exibir" type="submit">Exibir Contatos</button>
+        
+                        </div>
+                        
+                        <div class="area-do-botao">
+    
+                            <button class="botao-buscar" type="submit">Buscar Contato</button>
+                            <div id="fade" class="hide"></div>
+                            <div id="modal" class="hide">
+                                <div class="modal-header">
+                                    <h2>Digite o CPF do contato que deseja buscar</h2>
+                                    <button id="fechar-modal">Fechar</button>
+                                </div>
+                                <div id="modal-body">
+                                    <input class="formulario-cpf"  placeholder="CPF" name="cpf">
+                                </div>
+                            </div>
+        
+                        </div>
+                        
+                        <div class="area-do-botao">
+    
+                            <button class="botao-remover" type="button">Remover Contato</button>
+                            <div id="fade" class="hide"></div>
+                            <div id="modal" class="hide">
+                                <div class="modal-header" class="hide">
+                                    <h2>Digite o CPF do contato que deseja remover:</h2>
+                                    <button id="fechar-modal">Fechar</button>
+                                </div>
+                                <div id="modal-body">
+                                    <input class="formulario-cpf"  placeholder="CPF" name="cpf">
+                                </div>
+                            </div>
+        
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <ul class="lista-de-pessoas-cadastradas"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="../assests/js/index.js"></script>
+    
+
+</body>

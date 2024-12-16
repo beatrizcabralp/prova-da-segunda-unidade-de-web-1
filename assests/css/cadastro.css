@@ -1,0 +1,239 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(128, 128, 128, 0.1);
+}
+
+/*******************NAV****************/
+
+header, nav, header p
+{
+    background-color: rgba(75, 182, 182, 0.4);
+    color: rgb(138, 200, 179);
+    height: 5rem;
+    border-radius: 5px;
+}
+
+/*******************principal**************/
+main
+{
+    background-color: rgb(128, 128, 128, 0.15);
+}
+
+#cadastro
+{
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container-cadastro
+{
+    padding: 10px 0px 10px 0px;
+    background-color: #FFFFFF;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.titulo-principal
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    font-size: 1rem;
+    padding-top: 25px;
+}
+
+.formulario-de-cadastro
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 5px 0px 25px 0px;
+}
+
+.formulario-de-cadastro h2
+{
+    padding: 25px 0px 10px 0px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-nome,.formulario-cpf,
+.formulario-nascimento, .formulario-endereco
+{
+   height: 30px;
+   border-radius: 5px;
+   padding-left: 10px;
+   border-color: rgb(0, 0, 0, 0.1);
+}
+
+.area-dos-botoes
+{
+    width: 27%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 25px;
+    display: flex;
+}
+
+.area-do-botao
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.botao-cadastrar, .botao-exibir,
+.botao-buscar, .botao-remover
+{
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    background-color: rgb(4, 122, 248);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.botao-cadastrar
+{
+  margin-left: 0px;
+  width: 80px;
+}
+
+.botao-cadastrar:hover, .botao-exibir:hover, 
+.botao-buscar:hover, .botao-remover:hover,
+.botao-cadastrar:active, .botao-exibir:active,
+.botao-buscar:active, .botao-remover:active
+{
+    background-color: rgb(60, 151, 249);
+}
+
+/***********************barra-decorativa**************/
+
+li
+{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3
+{
+    color: blue;
+    list-style: none;
+    padding: 25px 10px 15px 10px;
+}
+
+.lista-de-pessoas-cadastradas
+{
+    width: 85%;
+}
+.lista
+{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+ 
+.container-lista
+{
+    width: 100%;
+}
+
+
+.lista-informacoes li
+{
+    list-style: none;
+    padding: 10px;
+}
+
+/*********modal********/
+#fade
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+#modal
+{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  max-width: 500px;
+  width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+.modal-header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-header h2
+{
+    padding: 5px 0px 0px 0px;
+}
+.modal-header button
+{
+    padding: 0.6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#modal-body
+{
+  margin-bottom: 1rem;
+}
+
+#modal.hide, #fade
+{
+    transition: 0.5;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#modal.hide, 
+#fade.hide
+{
+    opacity: 0;
+    pointer-events: none;
+}
